@@ -20,7 +20,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git debian knife)
+plugins=(git debian knife rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -41,7 +41,21 @@ alias pssh_mariadb='parallel-ssh -h ~/mariadb_hosts -i'
 
 export EDITOR=vim
 
-PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
+[[ -s $HOME/.rvm/bin ]] && PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
+if [[ -e /usr/local/rbenv/bin/rbenv ]]; then
+  export PATH=/usr/local/rbenv/bin:$PATH
+  export RBENV=global
+  export RBENV_ROOT=/usr/local/rbenv
+fi
+
+if [[ "$RBENV" != "" ]]; then
+  eval "$(rbenv init -)"
+  export GEM_HOME="$HOME/.gem"
+  export GEM_PATH="$HOME/.gem"
+  export PATH="$HOME/.gem/bin:$PATH"
+fi
+
+
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _approximate

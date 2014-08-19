@@ -26,7 +26,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/home/joe/bin:/home/joe/.rvm/bin:/home/joe/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-export PATH=/opt/chefdk/embedded/bin:$PATH
 
 [[ -s /home/joe/.nvm/nvm.sh ]] && . /home/joe/.nvm/nvm.sh # This loads NVM
 

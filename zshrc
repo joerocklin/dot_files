@@ -30,7 +30,9 @@ export PATH=/opt/chefdk/embedded/bin:$PATH
 
 [[ -s /home/joe/.nvm/nvm.sh ]] && . /home/joe/.nvm/nvm.sh # This loads NVM
 
-export GOPATH=/data/go
+export GOPATH=~/data/go
+
+export OPSCODE_USER=rocklin
 
 alias qd='date +"%Y%m%d-%H%M%S"'
 alias pssh_testbed='parallel-ssh -h ~/testbed/testbed_hosts -i'

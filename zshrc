@@ -54,6 +54,7 @@ if [[ "$RBENV" != "" ]]; then
   export PATH="$HOME/.gem/bin:$PATH"
 fi
 
+ssh-add ~/.ssh/id_rsa &> /dev/null
 
 # The following lines were added by compinstall
 

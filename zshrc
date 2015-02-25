@@ -25,9 +25,9 @@ plugins=(git debian knife rbenv)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/home/joe/bin:/home/joe/.rvm/bin:/home/joe/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-
-[[ -s /home/joe/.nvm/nvm.sh ]] && . /home/joe/.nvm/nvm.sh # This loads NVM
+export PATH=$PATH:/home/joe/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export PATH=/opt/node/bin:$PATH
+export PATH=/opt/atom/bin:$PATH
 
 export GOPATH=~/data/go
 
@@ -52,6 +52,11 @@ if [[ "$RBENV" != "" ]]; then
   export GEM_HOME="$HOME/.gem"
   export GEM_PATH="$HOME/.gem"
   export PATH="$HOME/.gem/bin:$PATH"
+fi
+
+if [[ -e /usr/local/share/chruby ]]; then 
+  source /usr/local/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
 fi
 
 ssh-add ~/.ssh/id_rsa &> /dev/null

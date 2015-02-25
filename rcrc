@@ -1,2 +1,2 @@
-EXCLUDES="README.md"
+EXCLUDES="README.md rcm-install.sh"
 SYMLINK_DIRS="zprezto"

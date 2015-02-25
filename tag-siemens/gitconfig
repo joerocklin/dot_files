@@ -51,3 +51,5 @@
 
 [url "https://"]
 	insteadOf = git://
+[git-up "fetch"]
+	all = true

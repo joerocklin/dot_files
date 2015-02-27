@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="personal-github"
+          fetch="git://github.com/joerocklin/"/>
+  <default revision="refs/heads/master"
+           remote="personal-github"
+           sync-j="4"/>
+ 
+  <project name="dot_files" path="."/>
+  <project name="prezto" path="zprezto"/>
+</manifest> 

@@ -6,4 +6,6 @@ cd rcm-1.2.3 && \
 
 ./configure --prefix=/home/${USER} && \
 make && \
-make install
+make install && \
+cd - && \
+rm -rf rcm-*

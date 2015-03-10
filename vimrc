@@ -1,3 +1,7 @@
+" Let's get pathogen in place right at the start
+"   https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
+
 
 " We're well into the Next Generation - stop being compatible with the past,
 " disable vi compatibility

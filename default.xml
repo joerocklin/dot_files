@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="personal-github"
-          fetch="git://github.com/joerocklin/"/>
+          fetch="https://github.com/joerocklin/"/>
   <default revision="refs/heads/master"
            remote="personal-github"
            sync-j="4"/>

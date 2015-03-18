@@ -16,6 +16,10 @@ I'm testing out multiple-repo management via [repo](https://source.android.com/s
 4. `repo init -u https://github.com/joerocklin/dot_files.git -b manifest`
 5. `repo sync`
 6. `repo forall -p -v -c 'git submodule update --init'`
+7. `./rcm-install.sh`
+8. `cd`
+9. `rcup rcrc`
+10. `rcup -v` (optionally with `-t siemens` included)
 
 Not sure if my current directory layout makes sense - I have almost not experience with repo at this point, so don't
 think this is in any way a best practice.

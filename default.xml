@@ -5,6 +5,8 @@
           review=""/>
   <remote name="github-scrooloose"
           fetch="https://github.com/scrooloose/"/>
+  <remote name="github-tpope"
+          fetch="https://github.com/tpope/"/>
   <default revision="refs/heads/master"
            remote="personal-github"
            sync-j="4"/>
@@ -12,4 +14,5 @@
   <project name="dot_files" path="."/>
   <project name="prezto" path="zprezto"/>
   <project name="nerdtree" path="vim/bundle/nerdtree" remote="github-scrooloose"/>
+  <project name="vim-fugitive" path="vim/bundle/vim-fugitive" remote="github-tpope"/>
 </manifest> 

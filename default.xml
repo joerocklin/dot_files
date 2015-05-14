@@ -7,6 +7,8 @@
           fetch="https://github.com/scrooloose/"/>
   <remote name="github-tpope"
           fetch="https://github.com/tpope/"/>
+  <remote name="github-elixir"
+          fetch="https://github.com/elixir-lang/"/>
   <default revision="refs/heads/master"
            remote="personal-github"
            sync-j="4"/>
@@ -15,4 +17,5 @@
   <project name="prezto" path="zprezto"/>
   <project name="nerdtree" path="vim/bundle/nerdtree" remote="github-scrooloose"/>
   <project name="vim-fugitive" path="vim/bundle/vim-fugitive" remote="github-tpope"/>
+  <project name="vim-elixir" path="vim/bundle/vim-elixir" remote="github-elixir"/>
 </manifest> 
